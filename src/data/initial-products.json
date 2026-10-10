@@ -1,0 +1,619 @@
+[
+  {
+    "id": "prod_aurum_tuxedo",
+    "title": "The Aurum Sovereign Velvet Tuxedo",
+    "slug": "aurum-sovereign-velvet-tuxedo",
+    "tagline": "Handcrafted silk-velvet dinner jacket with 24K gold filament peak lapels.",
+    "description": "Crafted in our Milanese atelier from 100% Italian silk-velvet, the Aurum Sovereign Tuxedo embodies regal power and unmatched sartorial refinement. Featuring hand-stitched peak lapels bordered with delicate gold silk braided piping, horn buttons wrapped in pure jacquard, and a structured canvassed chest that molds impeccably to your form over time.",
+    "features": [
+      "100% Superfine Italian Silk-Velvet with cupro lining",
+      "Hand-rolled gold filigree peak lapels",
+      "Full canvas construction with floating chest piece",
+      "Hand-finished Milanese boutonnière",
+      "Double back vents for effortless movement"
+    ],
+    "fabricCare": "100% Silk-Velvet shell; 100% Bemberg Cupro lining. Specialist dry clean only. Store on wide cedar garment hanger with breathable cotton suit bag.",
+    "category": "Bespoke Tuxedos & Suits",
+    "subCategory": "Velvet Tuxedos",
+    "tags": ["Tuxedo", "Black Tie", "Velvet", "Gold", "Wedding", "Gala"],
+    "basePrice": 48999,
+    "compareAtPrice": 58999,
+    "images": [
+      {
+        "id": "img_1_1",
+        "url": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=1200&q=80",
+        "alt": "The Aurum Sovereign Velvet Tuxedo Front View",
+        "isPrimary": true
+      },
+      {
+        "id": "img_1_2",
+        "url": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80",
+        "alt": "The Aurum Sovereign Velvet Tuxedo Detail Lapel",
+        "isPrimary": false
+      },
+      {
+        "id": "img_1_3",
+        "url": "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Aurum Velvet Fabric Texture",
+        "isPrimary": false
+      }
+    ],
+    "variants": [
+      {
+        "id": "var_1_38_blk",
+        "name": "38R / Sovereign Black",
+        "size": "38R",
+        "color": "Sovereign Black",
+        "colorHex": "#121212",
+        "sku": "YZ-TUX-BLK-38",
+        "price": 48999,
+        "compareAtPrice": 58999,
+        "stock": 4
+      },
+      {
+        "id": "var_1_40_blk",
+        "name": "40R / Sovereign Black",
+        "size": "40R",
+        "color": "Sovereign Black",
+        "colorHex": "#121212",
+        "sku": "YZ-TUX-BLK-40",
+        "price": 48999,
+        "compareAtPrice": 58999,
+        "stock": 6
+      },
+      {
+        "id": "var_1_42_blk",
+        "name": "42R / Sovereign Black",
+        "size": "42R",
+        "color": "Sovereign Black",
+        "colorHex": "#121212",
+        "sku": "YZ-TUX-BLK-42",
+        "price": 48999,
+        "compareAtPrice": 58999,
+        "stock": 2
+      },
+      {
+        "id": "var_1_40_emr",
+        "name": "40R / Royal Emerald",
+        "size": "40R",
+        "color": "Royal Emerald",
+        "colorHex": "#0A3B29",
+        "sku": "YZ-TUX-EMR-40",
+        "price": 51999,
+        "compareAtPrice": 62999,
+        "stock": 3
+      }
+    ],
+    "isFeatured": true,
+    "isBestSeller": true,
+    "isNewArrival": false,
+    "rating": 4.9,
+    "reviewCount": 18,
+    "reviews": [
+      {
+        "id": "rev_1_1",
+        "userId": "usr_vip_01",
+        "userName": "Raghav Singhania",
+        "rating": 5,
+        "title": "Unrivalled drape and craftsmanship",
+        "comment": "Wore this to an international gala in Dubai. The gold piping subtly catches the chandeliers without being ostentatious. The full-canvas chest creates an enviable silhouette.",
+        "verifiedPurchase": true,
+        "createdAt": "2026-09-18T10:30:00Z",
+        "status": "approved"
+      },
+      {
+        "id": "rev_1_2",
+        "userId": "usr_vip_02",
+        "userName": "Vikramaditya Roy",
+        "rating": 5,
+        "title": "A masterwork from Yzaaar",
+        "comment": "The silk-velvet feels astonishingly soft yet carries structure. Arrived in a bespoke wooden hanger and heavy canvas garment carrier within 48 hours.",
+        "verifiedPurchase": true,
+        "createdAt": "2026-09-24T14:15:00Z",
+        "status": "approved"
+      }
+    ],
+    "status": "active",
+    "createdAt": "2026-08-10T12:00:00Z"
+  },
+  {
+    "id": "prod_elysian_gown",
+    "title": "The Elysian Gold Pleated Lamé Gown",
+    "slug": "elysian-gold-pleated-lame-gown",
+    "tagline": "Floor-sweeping liquid gold lamé with architectural micro-plissé draping.",
+    "description": "An homage to modern goddess mythology. Cut on the bias from featherlight metallic liquid lamé, the Elysian Gown cascades in thousands of artisanal micro-accordion pleats. Features an asymmetric Grecian one-shoulder drape and a sweeping train lined with nude silk chiffon.",
+    "features": [
+      "Artisanal micro-plissé liquid metallic lamé",
+      "Built-in silk corset with flexible bone structuring",
+      "Asymmetric sculptural shoulder sash",
+      "Dramatic fluid slit and back sweep train",
+      "Concealed hand-placed side zipper"
+    ],
+    "fabricCare": "Metallic Polyester & Silk blend. Dry clean by evening wear specialist. Steam lightly with garment steamer from 6 inches distance.",
+    "category": "Haute Couture & Evening",
+    "subCategory": "Evening Gowns",
+    "tags": ["Evening Gown", "Liquid Gold", "Couture", "Red Carpet", "Cocktail"],
+    "basePrice": 62500,
+    "compareAtPrice": 75000,
+    "images": [
+      {
+        "id": "img_2_1",
+        "url": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=1200&q=80",
+        "alt": "The Elysian Gold Pleated Lamé Gown",
+        "isPrimary": true
+      },
+      {
+        "id": "img_2_2",
+        "url": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Elysian Gown Drape in Motion",
+        "isPrimary": false
+      }
+    ],
+    "variants": [
+      {
+        "id": "var_2_xs",
+        "name": "XS / Champagne Gold",
+        "size": "XS",
+        "color": "Champagne Gold",
+        "colorHex": "#D4AF37",
+        "sku": "YZ-ELY-GLD-XS",
+        "price": 62500,
+        "compareAtPrice": 75000,
+        "stock": 3
+      },
+      {
+        "id": "var_2_s",
+        "name": "S / Champagne Gold",
+        "size": "S",
+        "color": "Champagne Gold",
+        "colorHex": "#D4AF37",
+        "sku": "YZ-ELY-GLD-S",
+        "price": 62500,
+        "compareAtPrice": 75000,
+        "stock": 5
+      },
+      {
+        "id": "var_2_m",
+        "name": "M / Champagne Gold",
+        "size": "M",
+        "color": "Champagne Gold",
+        "colorHex": "#D4AF37",
+        "sku": "YZ-ELY-GLD-M",
+        "price": 62500,
+        "compareAtPrice": 75000,
+        "stock": 2
+      }
+    ],
+    "isFeatured": true,
+    "isBestSeller": true,
+    "isNewArrival": true,
+    "rating": 5.0,
+    "reviewCount": 12,
+    "reviews": [
+      {
+        "id": "rev_2_1",
+        "userId": "usr_vip_03",
+        "userName": "Ananya K.",
+        "rating": 5,
+        "title": "Pure liquid sunlight",
+        "comment": "The movement on this gown is breathtaking. You feel like royalty walking into a ballroom. The built-in corset gives complete peace of mind.",
+        "verifiedPurchase": true,
+        "createdAt": "2026-10-01T08:00:00Z",
+        "status": "approved"
+      }
+    ],
+    "status": "active",
+    "createdAt": "2026-09-01T10:00:00Z"
+  },
+  {
+    "id": "prod_savile_blazer",
+    "title": "The Dynasty Jacquard Silk Dinner Jacket",
+    "slug": "dynasty-jacquard-silk-dinner-jacket",
+    "tagline": "Midnight black and spun-gold woven floral brocade with shawl lapel.",
+    "description": "Woven on antique French jacquard looms, the Dynasty Dinner Jacket pairs dramatic optical brocade patterns with sleek satin shawl lapels. Designed to be the centerpiece of the modern gentleman's evening wardrobe.",
+    "features": [
+      "Custom woven metallic silk jacquard",
+      "Grosgrain satin shawl lapels",
+      "Bespoke gold-rimmed horn buttons",
+      "Flap pockets convertible to besom slits",
+      "Contrast champagne satin interior lining"
+    ],
+    "fabricCare": "Dry clean only. Press with cool iron using pressing cloth.",
+    "category": "Bespoke Tuxedos & Suits",
+    "subCategory": "Jacquard Dinner Jackets",
+    "tags": ["Dinner Jacket", "Brocade", "Silk", "Evening", "Party"],
+    "basePrice": 39500,
+    "compareAtPrice": 46000,
+    "images": [
+      {
+        "id": "img_3_1",
+        "url": "https://images.unsplash.com/photo-1555069519-127aadedf1ee?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Dynasty Jacquard Dinner Jacket Front",
+        "isPrimary": true
+      },
+      {
+        "id": "img_3_2",
+        "url": "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Dynasty Jacquard Fabric",
+        "isPrimary": false
+      }
+    ],
+    "variants": [
+      {
+        "id": "var_3_38",
+        "name": "38R / Midnight Gold",
+        "size": "38R",
+        "color": "Midnight Gold",
+        "colorHex": "#C5A059",
+        "sku": "YZ-DYN-38",
+        "price": 39500,
+        "compareAtPrice": 46000,
+        "stock": 5
+      },
+      {
+        "id": "var_3_40",
+        "name": "40R / Midnight Gold",
+        "size": "40R",
+        "color": "Midnight Gold",
+        "colorHex": "#C5A059",
+        "sku": "YZ-DYN-40",
+        "price": 39500,
+        "compareAtPrice": 46000,
+        "stock": 7
+      },
+      {
+        "id": "var_3_42",
+        "name": "42R / Midnight Gold",
+        "size": "42R",
+        "color": "Midnight Gold",
+        "colorHex": "#C5A059",
+        "sku": "YZ-DYN-42",
+        "price": 39500,
+        "compareAtPrice": 46000,
+        "stock": 3
+      }
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "rating": 4.8,
+    "reviewCount": 9,
+    "reviews": [],
+    "status": "active",
+    "createdAt": "2026-09-12T14:00:00Z"
+  },
+  {
+    "id": "prod_cashmere_trench",
+    "title": "The Imperial Double-Faced Cashmere Trench",
+    "slug": "imperial-double-faced-cashmere-trench",
+    "tagline": "Pure Mongolian 2-ply double-faced cashmere with sculpted storm flaps.",
+    "description": "Hand-stitched along every seam, this unlined double-faced cashmere trench requires over 32 hours of artisan needlework. Soft as air yet remarkably insulating, it drapes with effortless nonchalance over evening wear or day atelier silhouettes.",
+    "features": [
+      "100% Grade-A Mongolian Cashmere",
+      "Seamless double-faced hand-split finish",
+      "Tortoiseshell buckle waist belt with D-rings",
+      "Deep storm flap and welt pockets",
+      "Signature Yzaaar gold chain hanger loop"
+    ],
+    "fabricCare": "Professional cashmere clean only. Brush with natural bristle brush after wear.",
+    "category": "Women's Atelier",
+    "subCategory": "Cashmere Coats",
+    "tags": ["Trench Coat", "Cashmere", "Winter", "Luxury Outerwear"],
+    "basePrice": 54000,
+    "compareAtPrice": 64000,
+    "images": [
+      {
+        "id": "img_4_1",
+        "url": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Imperial Cashmere Trench Coat",
+        "isPrimary": true
+      },
+      {
+        "id": "img_4_2",
+        "url": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Imperial Cashmere Trench Profile",
+        "isPrimary": false
+      }
+    ],
+    "variants": [
+      {
+        "id": "var_4_s_cml",
+        "name": "S / Camel Dune",
+        "size": "S",
+        "color": "Camel Dune",
+        "colorHex": "#C19A6B",
+        "sku": "YZ-CSH-CML-S",
+        "price": 54000,
+        "compareAtPrice": 64000,
+        "stock": 4
+      },
+      {
+        "id": "var_4_m_cml",
+        "name": "M / Camel Dune",
+        "size": "M",
+        "color": "Camel Dune",
+        "colorHex": "#C19A6B",
+        "sku": "YZ-CSH-CML-M",
+        "price": 54000,
+        "compareAtPrice": 64000,
+        "stock": 6
+      },
+      {
+        "id": "var_4_s_blk",
+        "name": "S / Obsidian Black",
+        "size": "S",
+        "color": "Obsidian Black",
+        "colorHex": "#121212",
+        "sku": "YZ-CSH-BLK-S",
+        "price": 54000,
+        "compareAtPrice": 64000,
+        "stock": 3
+      }
+    ],
+    "isFeatured": false,
+    "isBestSeller": true,
+    "isNewArrival": false,
+    "rating": 4.9,
+    "reviewCount": 14,
+    "reviews": [],
+    "status": "active",
+    "createdAt": "2026-07-20T10:00:00Z"
+  },
+  {
+    "id": "prod_sovereign_weekender",
+    "title": "The Sovereign Calfskin Leather Weekender",
+    "slug": "sovereign-calfskin-leather-weekender",
+    "tagline": "Full-grain Tuscan vegetable-tanned leather with 24K brushed brass hardware.",
+    "description": "Constructed for jet-setting connoisseurs. Cut from hand-buffed Italian vegetable-tanned calfskin that will develop an irreplaceable deep patina with each voyage. Equipped with a dedicated base shoe compartment, water-resistant twill lining, and a solid brass padlock.",
+    "features": [
+      "Full-grain vegetable-tanned Italian calfskin",
+      "Brushed 24K electroplated gold hardware",
+      "Separate zipped bottom footwear compartment",
+      "Detachable padded ergonomic shoulder strap",
+      "Monogrammable luxury luggage tag included"
+    ],
+    "fabricCare": "Wipe with soft damp cloth. Condition bi-annually with neutral beeswax balm.",
+    "category": "Handcrafted Leather",
+    "subCategory": "Signature Bags",
+    "tags": ["Leather Bag", "Duffle", "Weekender", "Travel", "Luggage"],
+    "basePrice": 32999,
+    "compareAtPrice": 39999,
+    "images": [
+      {
+        "id": "img_5_1",
+        "url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Sovereign Calfskin Leather Weekender Bag",
+        "isPrimary": true
+      },
+      {
+        "id": "img_5_2",
+        "url": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Sovereign Weekender Travel Angle",
+        "isPrimary": false
+      }
+    ],
+    "variants": [
+      {
+        "id": "var_5_cognac",
+        "name": "One Size / Antique Cognac",
+        "size": "OS",
+        "color": "Antique Cognac",
+        "colorHex": "#8B4513",
+        "sku": "YZ-BAG-COG-01",
+        "price": 32999,
+        "compareAtPrice": 39999,
+        "stock": 8
+      },
+      {
+        "id": "var_5_black",
+        "name": "One Size / Onyx Black",
+        "size": "OS",
+        "color": "Onyx Black",
+        "colorHex": "#0A0A0A",
+        "sku": "YZ-BAG-BLK-01",
+        "price": 32999,
+        "compareAtPrice": 39999,
+        "stock": 4
+      }
+    ],
+    "isFeatured": true,
+    "isBestSeller": true,
+    "isNewArrival": false,
+    "rating": 4.9,
+    "reviewCount": 23,
+    "reviews": [],
+    "status": "active",
+    "createdAt": "2026-06-15T09:00:00Z"
+  },
+  {
+    "id": "prod_oxford_shoes",
+    "title": "Goodyear-Welted Wholecut Oxford Shoes",
+    "slug": "goodyear-welted-wholecut-oxford-shoes",
+    "tagline": "Crafted from a single flawless piece of French box-calf leather.",
+    "description": "The pinnacle of formal shoemaking. Hand-lasted in Northamptonshire using a seamless single-piece wholecut pattern. Features oak-bark tanned leather soles, beveled waists, and hand-burnished antiquing at the toe.",
+    "features": [
+      "Single-piece seamless wholecut construction",
+      "Goodyear-welted for lifetime resoling",
+      "Oak-bark tanned soles with brass slugging",
+      "Memory cork footbed molding to feet",
+      "Includes cedar shoe trees & dust bags"
+    ],
+    "fabricCare": "Clean with horsehair brush. Use saphir pommadier cream polish. Always rest with wooden shoe trees inside.",
+    "category": "Handcrafted Leather",
+    "subCategory": "Oxford Shoes",
+    "tags": ["Oxfords", "Shoes", "Formal Footwear", "Leather Shoes"],
+    "basePrice": 27500,
+    "compareAtPrice": 32000,
+    "images": [
+      {
+        "id": "img_6_1",
+        "url": "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Goodyear-Welted Wholecut Oxford Shoes",
+        "isPrimary": true
+      }
+    ],
+    "variants": [
+      {
+        "id": "var_6_uk8",
+        "name": "UK 8 / Hand-Burnished Espresso",
+        "size": "UK 8",
+        "color": "Burnished Espresso",
+        "colorHex": "#362B28",
+        "sku": "YZ-SHOE-UK8",
+        "price": 27500,
+        "compareAtPrice": 32000,
+        "stock": 3
+      },
+      {
+        "id": "var_6_uk9",
+        "name": "UK 9 / Hand-Burnished Espresso",
+        "size": "UK 9",
+        "color": "Burnished Espresso",
+        "colorHex": "#362B28",
+        "sku": "YZ-SHOE-UK9",
+        "price": 27500,
+        "compareAtPrice": 32000,
+        "stock": 5
+      },
+      {
+        "id": "var_6_uk10",
+        "name": "UK 10 / Hand-Burnished Espresso",
+        "size": "UK 10",
+        "color": "Burnished Espresso",
+        "colorHex": "#362B28",
+        "sku": "YZ-SHOE-UK10",
+        "price": 27500,
+        "compareAtPrice": 32000,
+        "stock": 2
+      }
+    ],
+    "isFeatured": false,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "rating": 4.7,
+    "reviewCount": 7,
+    "reviews": [],
+    "status": "active",
+    "createdAt": "2026-09-05T11:00:00Z"
+  },
+  {
+    "id": "prod_silk_scarf",
+    "title": "The Golden Zodiac Twill Silk Scarf (90cm)",
+    "slug": "golden-zodiac-twill-silk-scarf",
+    "tagline": "Hand-rolled French hems on heavyweight 18mm pure mulberry silk.",
+    "description": "An opulent square carré hand-screen printed with celestial constellations, mythical beasts, and the iconic Yzaaar gold ribbon emblems. Can be styled as a neckerchief, headpiece, or framed as a collector's artwork.",
+    "features": [
+      "100% Pure Mulberry Silk Twill (18 Momme)",
+      "Meticulously hand-rolled and hand-sewn hem edges",
+      "Multi-layer artisanal screen print with gold mica inks",
+      "90 x 90 cm oversized silhouette",
+      "Presented in gold-embossed drawer box"
+    ],
+    "fabricCare": "Dry clean only. Cool iron on reverse with damp pressing cloth.",
+    "category": "Jewelry & Silk Accents",
+    "subCategory": "Silk Scarves",
+    "tags": ["Scarf", "Silk", "Accessories", "Gift"],
+    "basePrice": 9500,
+    "compareAtPrice": 12000,
+    "images": [
+      {
+        "id": "img_7_1",
+        "url": "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=1200&q=80",
+        "alt": "The Golden Zodiac Silk Scarf",
+        "isPrimary": true
+      }
+    ],
+    "variants": [
+      {
+        "id": "var_7_os",
+        "name": "90cm / Celestial Gold & Noir",
+        "size": "90x90cm",
+        "color": "Gold & Noir",
+        "colorHex": "#D4AF37",
+        "sku": "YZ-SCRF-01",
+        "price": 9500,
+        "compareAtPrice": 12000,
+        "stock": 15
+      }
+    ],
+    "isFeatured": true,
+    "isBestSeller": false,
+    "isNewArrival": true,
+    "rating": 4.9,
+    "reviewCount": 11,
+    "reviews": [],
+    "status": "active",
+    "createdAt": "2026-09-20T16:00:00Z"
+  },
+  {
+    "id": "prod_bandhgala_jacket",
+    "title": "The Royal Jodhpur Raw Silk Bandhgala",
+    "slug": "royal-jodhpur-raw-silk-bandhgala",
+    "tagline": "Structured raw silk prince coat with engraved 24K gilt buttons.",
+    "description": "A celebrated confluence of Indian royalty and clean modern lines. Woven from textured raw slub silk with a stiffened mandarin collar, internal shoulder padding, and antique hand-carved floral buttons plated in 24K gold.",
+    "features": [
+      "100% Hand-loomed Raw Slub Silk",
+      "Mandarin collar with velvet under-collar collar stay",
+      "Seven antique 24K gilt brass buttons",
+      "Tailored darted waist with double rear slits",
+      "Silk pocket square included"
+    ],
+    "fabricCare": "Specialist dry clean. Store with cedar balls.",
+    "category": "Men's Luxury",
+    "subCategory": "Bandhgala Jackets",
+    "tags": ["Bandhgala", "Raw Silk", "Heritage", "Indian Luxury", "Wedding"],
+    "basePrice": 44500,
+    "compareAtPrice": 52000,
+    "images": [
+      {
+        "id": "img_8_1",
+        "url": "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Royal Jodhpur Raw Silk Bandhgala",
+        "isPrimary": true
+      }
+    ],
+    "variants": [
+      {
+        "id": "var_8_38_ivo",
+        "name": "38R / Royal Ivory",
+        "size": "38R",
+        "color": "Royal Ivory",
+        "colorHex": "#FFFFF0",
+        "sku": "YZ-BDG-IVO-38",
+        "price": 44500,
+        "compareAtPrice": 52000,
+        "stock": 4
+      },
+      {
+        "id": "var_8_40_ivo",
+        "name": "40R / Royal Ivory",
+        "size": "40R",
+        "color": "Royal Ivory",
+        "colorHex": "#FFFFF0",
+        "sku": "YZ-BDG-IVO-40",
+        "price": 44500,
+        "compareAtPrice": 52000,
+        "stock": 5
+      },
+      {
+        "id": "var_8_42_ivo",
+        "name": "42R / Royal Ivory",
+        "size": "42R",
+        "color": "Royal Ivory",
+        "colorHex": "#FFFFF0",
+        "sku": "YZ-BDG-IVO-42",
+        "price": 44500,
+        "compareAtPrice": 52000,
+        "stock": 3
+      }
+    ],
+    "isFeatured": true,
+    "isBestSeller": true,
+    "isNewArrival": false,
+    "rating": 4.9,
+    "reviewCount": 16,
+    "reviews": [],
+    "status": "active",
+    "createdAt": "2026-08-01T08:00:00Z"
+  }
+]
