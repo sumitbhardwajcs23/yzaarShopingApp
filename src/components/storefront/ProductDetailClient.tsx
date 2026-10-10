@@ -863,14 +863,6 @@ Please assist me with instant dispatch.`;
           </div>
         </div>
       )}
-
-      <style jsx global>{`
-        @media (max-width: 860px) {
-          .product-detail-layout {
-            grid-template-columns: 1fr !important;
-          }
-        }
-      `}</style>
     </div>
   );
 }

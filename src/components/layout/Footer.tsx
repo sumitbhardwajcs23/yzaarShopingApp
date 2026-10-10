@@ -151,6 +151,7 @@ export default function Footer() {
 
         {/* Main Footer Grid */}
         <div
+          className="footer-main-grid"
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
@@ -159,7 +160,7 @@ export default function Footer() {
           }}
         >
           {/* Brand Bio & Newsletter */}
-          <div style={{ gridColumn: 'span 2' }}>
+          <div className="footer-brand-bio" style={{ gridColumn: 'span 2' }}>
             <YzaaarLogo variant="light" size="md" />
             <p
               style={{
@@ -302,6 +303,7 @@ export default function Footer() {
 
         {/* Bottom Copyright & Disclaimer */}
         <div
+          className="footer-bottom-bar"
           style={{
             borderTop: '1px solid #16161E',
             paddingTop: '2rem',

@@ -132,7 +132,6 @@ export default function Header() {
             <button
               onClick={() => setMobileMenuOpen(true)}
               style={{
-                display: 'none',
                 color: '#FAF9F6',
                 padding: '0.5rem',
               }}
@@ -515,97 +514,103 @@ export default function Header() {
             </div>
           </div>
         </div>
-
-        {/* Mobile Slide-in Drawer */}
-        {mobileMenuOpen && (
-          <div
-            style={{
-              position: 'fixed',
-              inset: 0,
-              backgroundColor: 'rgba(0,0,0,0.85)',
-              zIndex: 1000,
-            }}
-          >
-            <div
-              style={{
-                width: '85%',
-                maxWidth: '320px',
-                height: '100%',
-                backgroundColor: '#111114',
-                padding: '1.5rem',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between',
-                borderRight: '1px solid rgba(212, 175, 55, 0.3)',
-              }}
-            >
-              <div>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
-                  <YzaaarLogo variant="light" size="sm" />
-                  <button onClick={() => setMobileMenuOpen(false)} style={{ color: '#FAF9F6' }}>
-                    <X size={24} />
-                  </button>
-                </div>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
-                  {navLinks.map((link) => (
-                    <Link
-                      key={link.label}
-                      href={link.href}
-                      onClick={() => setMobileMenuOpen(false)}
-                      style={{
-                        fontSize: '0.95rem',
-                        fontWeight: 600,
-                        color: '#FAF9F6',
-                        letterSpacing: '0.08em',
-                        textTransform: 'uppercase',
-                        padding: '0.4rem 0',
-                        borderBottom: '1px solid #202026',
-                      }}
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-
-              <div style={{ borderTop: '1px solid #222228', paddingTop: '1.5rem' }}>
-                <Link
-                  href="/admin"
-                  onClick={() => setMobileMenuOpen(false)}
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '0.6rem',
-                    color: '#D4AF37',
-                    fontSize: '0.85rem',
-                  }}
-                >
-                  <Shield size={16} /> Admin Portal
-                </Link>
-              </div>
-            </div>
-          </div>
-        )}
       </header>
 
-      <style jsx global>{`
-        @media (max-width: 992px) {
-          .desktop-nav {
-            display: none !important;
-          }
-          .mobile-toggle {
-            display: block !important;
-          }
-          .announcement-left {
-            display: none !important;
-          }
-        }
-        @media (min-width: 768px) {
-          .user-name-label {
-            display: inline !important;
-          }
-        }
-      `}</style>
+      {/* Mobile Slide-in Drawer (placed outside header to escape backdrop-filter containing block) */}
+      {mobileMenuOpen && (
+        <div
+          style={{
+            position: 'fixed',
+            inset: 0,
+            zIndex: 9999,
+            display: 'flex',
+          }}
+        >
+          {/* Backdrop */}
+          <div
+            onClick={() => setMobileMenuOpen(false)}
+            style={{
+              position: 'absolute',
+              inset: 0,
+              backgroundColor: 'rgba(0,0,0,0.82)',
+              backdropFilter: 'blur(8px)',
+              animation: 'fadeIn 0.2s ease',
+            }}
+          />
+
+          {/* Drawer Sidebar */}
+          <aside
+            style={{
+              position: 'relative',
+              width: '300px',
+              maxWidth: '85vw',
+              height: '100%',
+              backgroundColor: '#0F0F14',
+              borderRight: '1px solid rgba(212, 175, 55, 0.3)',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              padding: '1.8rem 1.5rem',
+              zIndex: 10,
+              boxShadow: '10px 0 35px rgba(0,0,0,0.9)',
+              animation: 'slideInLeft 0.25s ease-out',
+              overflowY: 'auto',
+            }}
+          >
+            <div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
+                <YzaaarLogo variant="light" size="sm" />
+                <button
+                  onClick={() => setMobileMenuOpen(false)}
+                  style={{ color: '#FAF9F6', padding: '0.4rem' }}
+                  aria-label="Close menu"
+                >
+                  <X size={24} />
+                </button>
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    style={{
+                      fontSize: '0.9rem',
+                      fontWeight: 600,
+                      color: '#FAF9F6',
+                      letterSpacing: '0.08em',
+                      textTransform: 'uppercase',
+                      padding: '0.6rem 0',
+                      borderBottom: '1px solid #1E1E26',
+                      transition: 'color 0.2s ease',
+                    }}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div style={{ borderTop: '1px solid #1E1E26', paddingTop: '1.5rem', marginTop: '1.5rem' }}>
+              <Link
+                href="/admin"
+                onClick={() => setMobileMenuOpen(false)}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.6rem',
+                  color: '#ECC86A',
+                  fontSize: '0.85rem',
+                  fontWeight: 600,
+                }}
+              >
+                <Shield size={16} /> Admin Portal
+              </Link>
+            </div>
+          </aside>
+        </div>
+      )}
     </>
   );
 }

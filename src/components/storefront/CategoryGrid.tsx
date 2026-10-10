@@ -49,6 +49,7 @@ export default function CategoryGrid({ categories }: CategoryGridProps) {
 
         {/* Grid layout */}
         <div
+          className="category-grid-2col"
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',

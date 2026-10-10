@@ -439,14 +439,6 @@ export default function AdminDashboardPage() {
           </div>
         </div>
       </div>
-
-      <style jsx global>{`
-        @media (max-width: 960px) {
-          .admin-bottom-grid {
-            grid-template-columns: 1fr !important;
-          }
-        }
-      `}</style>
     </div>
   );
 }

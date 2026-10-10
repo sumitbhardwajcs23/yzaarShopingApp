@@ -127,6 +127,7 @@ export default function FeaturedCollection({ products }: FeaturedCollectionProps
 
         {/* Product Cards Grid */}
         <div
+          className="product-grid-2col"
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',

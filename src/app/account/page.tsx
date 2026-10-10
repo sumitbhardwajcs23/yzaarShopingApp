@@ -1152,14 +1152,6 @@ function AccountDashboardContent() {
           </div>
         </div>
       )}
-
-      <style jsx global>{`
-        @media (max-width: 860px) {
-          .account-grid-layout {
-            grid-template-columns: 1fr !important;
-          }
-        }
-      `}</style>
     </div>
   );
 }

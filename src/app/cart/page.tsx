@@ -811,14 +811,6 @@ export default function CartPage() {
           </div>
         </div>
       </div>
-
-      <style jsx global>{`
-        @media (max-width: 900px) {
-          .cart-grid-layout {
-            grid-template-columns: 1fr !important;
-          }
-        }
-      `}</style>
     </div>
   );
 }

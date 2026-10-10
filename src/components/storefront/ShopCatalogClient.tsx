@@ -167,7 +167,6 @@ export default function ShopCatalogClient({ initialProducts, categories }: ShopC
                 onClick={() => setMobileFiltersOpen(true)}
                 className="btn btn-dark mobile-filter-btn"
                 style={{
-                  display: 'none',
                   padding: '0.65rem 1.1rem',
                   fontSize: '0.75rem',
                 }}
@@ -474,6 +473,7 @@ export default function ShopCatalogClient({ initialProducts, categories }: ShopC
               </div>
             ) : (
               <div
+                className="shop-product-grid"
                 style={{
                   display: 'grid',
                   gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))',
@@ -489,19 +489,156 @@ export default function ShopCatalogClient({ initialProducts, categories }: ShopC
         </div>
       </div>
 
-      <style jsx global>{`
-        @media (max-width: 900px) {
-          .shop-layout {
-            grid-template-columns: 1fr !important;
-          }
-          .desktop-filter-sidebar {
-            display: none !important;
-          }
-          .mobile-filter-btn {
-            display: inline-flex !important;
-          }
-        }
-      `}</style>
+      {/* Mobile Filter Drawer Overlay */}
+      {mobileFiltersOpen && (
+        <div
+          style={{
+            position: 'fixed',
+            inset: 0,
+            zIndex: 1000,
+            display: 'flex',
+          }}
+        >
+          {/* Backdrop */}
+          <div
+            onClick={() => setMobileFiltersOpen(false)}
+            style={{
+              position: 'absolute',
+              inset: 0,
+              backgroundColor: 'rgba(0,0,0,0.8)',
+              backdropFilter: 'blur(6px)',
+              animation: 'fadeIn 0.2s ease',
+            }}
+          />
+
+          {/* Drawer Sidebar */}
+          <aside
+            style={{
+              position: 'relative',
+              width: '320px',
+              maxWidth: '85vw',
+              height: '100%',
+              backgroundColor: '#111116',
+              borderRight: '1px solid rgba(212, 175, 55, 0.3)',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              padding: '1.8rem 1.4rem',
+              zIndex: 10,
+              boxShadow: '10px 0 30px rgba(0,0,0,0.8)',
+              overflowY: 'auto',
+            }}
+          >
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.8rem', borderBottom: '1px solid #202028', paddingBottom: '0.8rem' }}>
+                <h3 style={{ fontSize: '0.95rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#FAF9F6', margin: 0, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <SlidersHorizontal size={16} color="#D4AF37" /> Refine Catalog
+                </h3>
+                <button
+                  onClick={() => setMobileFiltersOpen(false)}
+                  style={{ color: '#FAF9F6', padding: '0.4rem' }}
+                  aria-label="Close filters"
+                >
+                  <X size={22} />
+                </button>
+              </div>
+
+              {/* Categories */}
+              <div style={{ marginBottom: '2rem' }}>
+                <h4 style={{ fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: '#D4AF37', marginBottom: '0.9rem' }}>
+                  Categories
+                </h4>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.45rem' }}>
+                  <button
+                    onClick={() => { handleCategoryChange('all'); setMobileFiltersOpen(false); }}
+                    style={{
+                      textAlign: 'left',
+                      fontSize: '0.85rem',
+                      padding: '0.45rem 0.6rem',
+                      borderRadius: '4px',
+                      color: selectedCategory === 'all' ? '#FAF9F6' : '#8A8A96',
+                      backgroundColor: selectedCategory === 'all' ? '#1C1C24' : 'transparent',
+                      fontWeight: selectedCategory === 'all' ? 600 : 400,
+                      borderLeft: selectedCategory === 'all' ? '2px solid #D4AF37' : 'none',
+                    }}
+                  >
+                    All Creations
+                  </button>
+                  {categories.map((c) => (
+                    <button
+                      key={c.id}
+                      onClick={() => { handleCategoryChange(c.slug); setMobileFiltersOpen(false); }}
+                      style={{
+                        textAlign: 'left',
+                        fontSize: '0.85rem',
+                        padding: '0.45rem 0.6rem',
+                        borderRadius: '4px',
+                        color: selectedCategory === c.slug ? '#FAF9F6' : '#8A8A96',
+                        backgroundColor: selectedCategory === c.slug ? '#1C1C24' : 'transparent',
+                        fontWeight: selectedCategory === c.slug ? 600 : 400,
+                        borderLeft: selectedCategory === c.slug ? '2px solid #D4AF37' : 'none',
+                      }}
+                    >
+                      {c.name}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Price Filter */}
+              <div style={{ marginBottom: '2rem' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.8rem' }}>
+                  <h4 style={{ fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: '#D4AF37', margin: 0 }}>
+                    Max Price
+                  </h4>
+                  <span style={{ fontSize: '0.82rem', fontWeight: 600, color: '#ECC86A' }}>
+                    {formatCurrency(maxPrice)}
+                  </span>
+                </div>
+                <input
+                  type="range"
+                  min="5000"
+                  max="80000"
+                  step="2500"
+                  value={maxPrice}
+                  onChange={(e) => setMaxPrice(Number(e.target.value))}
+                  style={{ width: '100%', accentColor: '#D4AF37', cursor: 'pointer' }}
+                />
+              </div>
+
+              {/* In-Stock Toggle */}
+              <div style={{ marginBottom: '2rem' }}>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', cursor: 'pointer' }}>
+                  <input
+                    type="checkbox"
+                    checked={inStockOnly}
+                    onChange={(e) => setInStockOnly(e.target.checked)}
+                    style={{ accentColor: '#D4AF37', width: '16px', height: '16px' }}
+                  />
+                  <span style={{ fontSize: '0.85rem', color: '#FAF9F6' }}>In Stock Only</span>
+                </label>
+              </div>
+            </div>
+
+            <div style={{ display: 'flex', gap: '0.8rem', borderTop: '1px solid #202028', paddingTop: '1.2rem', marginTop: '1rem' }}>
+              <button
+                onClick={() => { handleResetFilters(); setMobileFiltersOpen(false); }}
+                className="btn btn-ghost"
+                style={{ flex: 1, fontSize: '0.75rem' }}
+              >
+                Reset
+              </button>
+              <button
+                onClick={() => setMobileFiltersOpen(false)}
+                className="btn btn-gold"
+                style={{ flex: 1, fontSize: '0.75rem' }}
+              >
+                Apply ({filteredProducts.length})
+              </button>
+            </div>
+          </aside>
+        </div>
+      )}
     </div>
   );
 }

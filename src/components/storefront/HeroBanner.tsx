@@ -48,6 +48,7 @@ export default function HeroBanner() {
 
       <div className="container">
         <div
+          className="hero-grid"
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
@@ -123,6 +124,7 @@ export default function HeroBanner() {
 
             {/* Micro Pillars */}
             <div
+              className="hero-pillars"
               style={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(3, 1fr)',
