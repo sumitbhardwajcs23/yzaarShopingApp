@@ -2,6 +2,8 @@
 
 > *"Fashion Lives Online"* — An ultra-premium Haute Couture and luxury fashion e-commerce ecosystem built with Next.js 15, React 19, and TypeScript.
 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sumitbhardwajcs23/yzaarShopingApp)
+
 ---
 
 ## ✨ Overview
@@ -68,6 +70,26 @@
 
 4. **Open in browser:**
    Navigate to [http://localhost:3000](http://localhost:3000) to view the storefront, or [http://localhost:3000/admin](http://localhost:3000/admin) to explore the Atelier Admin Portal.
+
+---
+
+## 🌐 Free Deployment to Netlify
+
+You can host this project on Netlify completely free with automated CI/CD and HTTPS:
+
+### Option A: One-Click Instant Deploy
+Click the button below to fork and deploy directly to Netlify:
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sumitbhardwajcs23/yzaarShopingApp)
+
+### Option B: Connect Existing GitHub Repository (Recommended)
+1. Sign up or log in at [app.netlify.com](https://app.netlify.com/) (using your GitHub account).
+2. Click **Add new site** > **Import an existing project**.
+3. Choose **GitHub** and grant access to `sumitbhardwajcs23/yzaarShopingApp`.
+4. Netlify will auto-detect the preset:
+   - **Build Command:** `npm run build`
+   - **Publish directory:** `.next`
+5. Click **Deploy Yzaaar**. Your live site URL (e.g. `https://yzaaar.netlify.app`) will be active within 2 minutes!
 
 ---
 

@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import os from 'os';
 import { Product, Category, Order, ActivityLog, Coupon, OrderStatus } from './types';
 import initialProducts from '../data/initial-products.json';
 import initialCategories from '../data/categories.json';
@@ -12,8 +13,19 @@ interface DatabaseSchema {
   activityLogs: ActivityLog[];
 }
 
-const DATA_DIR = path.join(process.cwd(), '.data');
+const IS_SERVERLESS = Boolean(
+  process.env.NETLIFY ||
+  process.env.AWS_LAMBDA_FUNCTION_NAME ||
+  process.env.VERCEL
+);
+
+const DATA_DIR = IS_SERVERLESS
+  ? path.join(os.tmpdir(), 'yzaaar_data')
+  : path.join(process.cwd(), '.data');
+
 const DB_FILE = path.join(DATA_DIR, 'store.json');
+
+let memoryDbCache: DatabaseSchema | null = null;
 
 const INITIAL_COUPONS: Coupon[] = [
   {
@@ -152,6 +164,10 @@ const INITIAL_LOGS: ActivityLog[] = [
 ];
 
 function ensureDbFile(): DatabaseSchema {
+  if (memoryDbCache) {
+    return memoryDbCache;
+  }
+
   try {
     if (!fs.existsSync(DATA_DIR)) {
       fs.mkdirSync(DATA_DIR, { recursive: true });
@@ -165,32 +181,42 @@ function ensureDbFile(): DatabaseSchema {
         coupons: INITIAL_COUPONS,
         activityLogs: INITIAL_LOGS,
       };
-      fs.writeFileSync(DB_FILE, JSON.stringify(initialDb, null, 2), 'utf-8');
+      try {
+        fs.writeFileSync(DB_FILE, JSON.stringify(initialDb, null, 2), 'utf-8');
+      } catch {
+        // Ignore write failure if filesystem is constrained
+      }
+      memoryDbCache = initialDb;
       return initialDb;
     }
 
     const data = fs.readFileSync(DB_FILE, 'utf-8');
-    return JSON.parse(data) as DatabaseSchema;
+    const parsed = JSON.parse(data) as DatabaseSchema;
+    memoryDbCache = parsed;
+    return parsed;
   } catch (error) {
     console.error('Error reading DB, returning defaults:', error);
-    return {
+    const fallbackDb: DatabaseSchema = {
       products: initialProducts as unknown as Product[],
       categories: initialCategories as unknown as Category[],
       orders: INITIAL_ORDERS,
       coupons: INITIAL_COUPONS,
       activityLogs: INITIAL_LOGS,
     };
+    memoryDbCache = fallbackDb;
+    return fallbackDb;
   }
 }
 
 function saveDb(data: DatabaseSchema): void {
+  memoryDbCache = data;
   try {
     if (!fs.existsSync(DATA_DIR)) {
       fs.mkdirSync(DATA_DIR, { recursive: true });
     }
     fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2), 'utf-8');
   } catch (error) {
-    console.error('Error saving DB:', error);
+    console.error('Error saving DB to filesystem (using memory cache):', error);
   }
 }
 
